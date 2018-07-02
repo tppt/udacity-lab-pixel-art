@@ -1,5 +1,8 @@
 // Select color input
-// Select size input
+let color = '';
+document.getElementById('colorPicker').addEventListener('change', function (event) {
+  color = event.target.value;
+});
 
 // When size is submitted by the user, call makeGrid()
 document.getElementById('sizePicker').addEventListener('submit', function (event) {
