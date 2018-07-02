@@ -10,6 +10,11 @@ document.getElementById('sizePicker').addEventListener('submit', function (event
   makeGrid();
 });
 
+//When table cell is clicked by user, add color to it
+document.getElementById('pixelCanvas').addEventListener('click', function (event) {
+  event.target.style.backgroundColor = color;
+});
+
 function makeGrid() {
   const height = document.getElementById('inputHeight').value;
   const width = document.getElementById('inputWidth').value;
